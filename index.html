@@ -38,7 +38,7 @@
             <br /><br /><br /><br /> <br /><br /><br />
             <javascript>
                 var xhr = new XMLHttpRequest(); // 创建XMLHttpRequest对象
-                xhr.open('GET', 'file_url'); // 设置请求类型为GET，指定文件URL
+                xhr.open('GET', 'test.txt'); // 设置请求类型为GET，指定文件URL
                 xhr.onreadystatechange = function() { // 当状态改变时触发该函数
                 if (xhr.readyState === 4 && xhr.status === 200) { // 如果请求成功完成（状态值为4）且响应状态码为200
                     var fileContent = xhr.responseText; // 获取服务器返回的文本内容
