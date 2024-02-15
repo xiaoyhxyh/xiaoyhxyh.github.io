@@ -34,28 +34,18 @@
                 </ul>
             </nav>
             <br /><br /><br /><br /> <br /><br /><br /><br /><br/><br/><br/><br/><br/><br/>
-            <center><h1 id="home">cs2d公益托管大厅官网</h1></center>
+            <center><h1 id="home">cs2d论坛</h1></center>
             <br /><br /><br /><br /> <br /><br /><br />
-            <h2 id="aboutserver">关于服务器</h2>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务器名称：----------Create Your SERVER---------</h3></i>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cs2d公益托管大厅于2024/2/09日抢先开放在cs2d服务器列表中，虽然目前有一些不足，但是在后续的开发中会持续填坑</h3></i>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在公益托管大厅中，服务器会免费托管一个24小时开服的服务器，除非有意外情况，比如作者要带服务器出门啥的，但是一般问题不大</h3></i>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一般来说，在大厅中输入开服指令只需要一次，如果连续发的话可能会导致服务器视为攻击而将你踢出去</h3></i>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在以后可能会解决这个问题</h3></i>
-            <i><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望大家能够加入这个团队，为所有玩家提供更方便的服务！</h3></i>
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2 id="aboutour">制作团队（Virus战队)</h2>
-            <i><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主程序：xiaoyh</h4></i>
-            <i><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支持：KyLin</h4></i>
-            <i><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></i>
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2 id="contact">联系我们</h2>
-            <i><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xiaoyh's QQ:2321234001</h4></i>
+            <javascript>
+                var xhr = new XMLHttpRequest(); // 创建XMLHttpRequest对象
+                xhr.open('GET', 'file_url'); // 设置请求类型为GET，指定文件URL
+                xhr.onreadystatechange = function() { // 当状态改变时触发该函数
+                if (xhr.readyState === 4 && xhr.status === 200) { // 如果请求成功完成（状态值为4）且响应状态码为200
+                    var fileContent = xhr.responseText; // 获取服务器返回的文本内容
+                    console.log(fileContent); // 输出文件内容到控制台
+                }
+                };
+                xhr.send(); // 发送请求
+            </javascript>
         </body>
     </html>
