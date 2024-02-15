@@ -43,7 +43,7 @@
                     var content = document.getElementById('textInput').value;
 
                     var xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'test.txt'); // 假设服务器端处理文件写入的路由为 /writeToFile
+                    xhr.open('POST', '/writeToFile'); // 假设服务器端处理文件写入的路由为 /writeToFile
                     xhr.setRequestHeader('Content-Type', 'application/json');
                     xhr.onload = function() {
                     if (xhr.status === 200) {
