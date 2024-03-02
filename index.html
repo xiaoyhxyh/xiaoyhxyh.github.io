@@ -1,56 +1,48 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title>cs2d公益托管大厅</title>
-            <meta charset="utf-8"/>
-            <style>
-                nav ul {
-                    list-style-type:none;
-                }
-                nav a {
-                    display: block;
-                    padding: 20px;
-                    text-decoration: none;
-                    color:black;
-                }
-                nav li{
-                    float:left;
-                }
-                nav img{
-                    float:left;
-                }
-            </style>
-            <link rel="shortcut icon"href="cs2d.ico">
-        </head>
+<!doctype html>
+<html>
+<head>
+    <title>cs2d中文站</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="cs2d.ico">
+    <style>
+        nav ul {
+            list-style-type: none;
+        }
 
-        <body>
-            <nav>
-                <ul>
-                    <li><a href="http://www.cs2d.com"><img src="cs2d.ico"></a></li>
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#aboutserver">关于服务器</a></li>
-                    <li><a href="#aboutour">关于我们</a></li>
-                    <li><a href="#contact">联系我们</a></li>
-                </ul>
-            </nav>
-            <br /><br /><br /><br /> <br /><br /><br /><br /><br/><br/><br/><br/><br/><br/>
-            <center><h1 id="home">cs2d论坛</h1></center>
-            <br /><br /><br /><br /> <br /><br /><br />
-            <input type="text" id="textInput" placeholder="Enter text here..."><br>
-            <button onclick="writeToFile()">Write to File</button>
-            <script>
-                <h1>好好好</h1>
-            </script>
-            <script>
-                var xhr = new XMLHttpRequest(); // 创建XMLHttpRequest对象
-                xhr.open('GET', 'test.txt'); // 设置请求类型为GET，指定文件URL
-                xhr.onreadystatechange = function() { // 当状态改变时触发该函数
-                if (xhr.readyState === 4 && xhr.status === 200) { // 如果请求成功完成（状态值为4）且响应状态码为200
-                    var fileContent = xhr.responseText; // 获取服务器返回的文本内容
-                    console.log(fileContent); // 输出文件内容到控制台
-                }
-                };
-                xhr.send(); // 发送请求
-            </script>
-        </body>
-    </html>
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav li {
+            float: left;
+        }
+        img {
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+        nav a:hover {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="menu" style="background-color:#FFD700;height:900px;width:200px;float:left;">
+        <b>菜单</b><br>
+        <i>
+        <nav>
+            <ul>
+                <li><a href="关于cs2d.html">关于cs2d</a></li>
+                <br/>
+                <li><a href="玩家论坛.html">玩家论坛</a></li>
+            </ul>
+        </nav>
+    </div>
+    </i>
+    <div class="title" style="background-color: #808080; height: 200px; width: 1650px; float: left; ">
+        <img src="cs2d.ico" width="50" height="50" />
+        <h1 style="color:yellow">欢迎来到CS2D中文站！<h1>
+    </div>
+</body>
+</html>
